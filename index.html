@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日数学探险</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f3f6fb;
+      color: #243247;
+      font-family: system-ui, "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 24px 16px 60px;
+    }
+    header { text-align: center; padding: 20px 0; }
+    h1 { color: #2358a8; margin-bottom: 8px; }
+    h2 { font-size: 23px; }
+    h3 { font-size: 20px; margin-top: 0; }
+    .intro { color: #64748b; }
+    .day { margin-top: 30px; }
+    .question {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 18px 0;
+      box-shadow: 0 4px 16px #24324708;
+    }
+    .level { color: #916000; font-size: 14px; }
+    .numbers {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2358a8;
+      word-spacing: 16px;
+    }
+    details {
+      margin-top: 14px;
+      padding: 12px 16px;
+      background: #f1f5f9;
+      border-radius: 10px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #2358a8;
+    }
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>🧠 每日数学探险</h1>
+    <p class="intro">每天一点思考，不只算出答案，更要说清为什么。</p>
+    <p>准备好纸和笔，先自己尝试，再打开提示和答案。</p>
+  </header>
 
+  <!-- 以后新增的每日题目，放在这行下面，旧题上面 -->
+
+  <!-- 每日题目开始 -->
+  <section class="day">
+    <h2>第1天｜分数运算与比大小</h2>
+    <p class="intro">今日挑战：热身 → 推理 → 思维转弯</p>
+
+    <article class="question">
+      <p class="level">★☆☆ 热身题</p>
+      <h3>🤖 第1题：机器人抢修赛</h3>
+      <p>两个机器人分别修理两条一样长的管道。</p>
+      <ul>
+        <li>小红上午修了整条管道的 3/8，下午又修了整条管道的 1/4。</li>
+        <li>小蓝一天修了整条管道的 2/3。</li>
+      </ul>
+      <p>小红说：“我修了两次，肯定比你修得多！”</p>
+      <p><strong>谁修得更多？多了整条管道的几分之几？</strong></p>
+
+      <details>
+        <summary>💡 看一点提示</summary>
+        <p>先算小红一共修了多少，再比较。可以把管道分成24等份。</p>
+      </details>
+      <details>
+        <summary>✅ 查看答案与思路</summary>
+        <p>小红：3/8 + 1/4 = 5/8 = 15/24。</p>
+        <p>小蓝：2/3 = 16/24。</p>
+        <p>所以小蓝更多，多了整条管道的 1/24。</p>
+        <p>关键：修了几次，不等于修了多少。</p>
+      </details>
+    </article>
+
+    <article class="question">
+      <p class="level">★★☆ 逻辑题</p>
+      <h3>🔐 第2题：宝箱的分数密码</h3>
+      <p>宝箱上有四个按钮，只有一个能打开宝箱：</p>
+      <p class="numbers">7/12　2/3　17/24　3/4</p>
+      <p>线索①：密码比 1/2 大，但比 3/4 小。</p>
+      <p>线索②：密码加上 1/6 后，结果比 5/6 大。</p>
+      <p><strong>应该按哪个按钮？如果只保留一条线索，还能确定答案吗？</strong></p>
+
+      <details>
+        <summary>💡 看一点提示</summary>
+        <p>“比它大”不包括“和它一样大”。逐个检查候选答案。</p>
+      </details>
+      <details>
+        <summary>✅ 查看答案与思路</summary>
+        <p>答案是 17/24。</p>
+        <ul>
+          <li>7/12 加上 1/6 得到 3/4，不满足线索②。</li>
+          <li>2/3 加上 1/6 恰好等于 5/6，不满足线索②。</li>
+          <li>17/24 加上 1/6 得到 21/24，大于 5/6，两条都满足。</li>
+          <li>3/4 不满足线索①，因为它不比自己小。</li>
+        </ul>
+        <p>只保留①，会剩下三个候选；只保留②，会剩下两个候选。</p>
+        <p>所以两条线索缺一不可。</p>
+      </details>
+    </article>
+
+    <article class="question">
+      <p class="level">★★★ 转弯题</p>
+      <h3>🧪 第3题：魔法药水</h3>
+      <p>A杯有1量杯红药水，B杯有1量杯蓝药水，两个杯子的容量都足够大。</p>
+      <ol>
+        <li>从A杯取出 1/3 量杯红药水，倒进B杯。</li>
+        <li>把B杯充分搅拌均匀，再取出 1/3 量杯混合药水，倒回A杯。</li>
+      </ol>
+      <p>药水混合后体积直接相加，过程中没有洒出。</p>
+      <p><strong>最后，A杯里的蓝药水和B杯里的红药水，哪个更多？还是一样多？</strong></p>
+      <p>加分挑战：各有多少量杯？能不能不做分数乘除法，就解释为什么？</p>
+
+      <details>
+        <summary>💡 提示一</summary>
+        <p>两次倒出的总量相同，最后每个杯子里一共有多少药水？</p>
+      </details>
+      <details>
+        <summary>💡 提示二</summary>
+        <p>A杯少掉的红药水去了哪里？它空出的位置被什么补上了？</p>
+      </details>
+      <details>
+        <summary>✅ 查看答案与思路</summary>
+        <p><strong>一样多，都是 1/4 量杯。</strong></p>
+        <p>不计算的解释：</p>
+        <p>A杯最后仍然有1量杯药水。里面混入多少蓝药水，
+          就意味着它比最初少了多少红药水。
+          这些少掉的红药水全部留在B杯里，所以两者相等。</p>
+        <p>计算验证：</p>
+        <p>第一次倒完，B杯共有 4/3 量杯药水，蓝药水占其中的 3/4。</p>
+        <p>倒回A杯的蓝药水：1/3 × 3/4 = 1/4 量杯。</p>
+        <p>倒回的红药水：1/3 × 1/4 = 1/12 量杯。</p>
+        <p>B杯剩下的红药水：1/3 − 1/12 = 1/4 量杯。</p>
+      </details>
+    </article>
+  </section>
+  <!-- 每日题目结束 -->
+
+  <footer>今天最有趣的发现是什么？试着用自己的话讲出来。</footer>
+</main>
+</body>
+</html>
