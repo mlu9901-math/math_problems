@@ -1,0 +1,14 @@
+{
+  "id": "fractions-001",
+  "day": 1,
+  "topic": "Fractions",
+  "difficulty": 1,
+  "title": "Robot Repair Race",
+  "question": "Red repairs 3/8 + 1/4 of a pipe. Blue repairs 2/3. Who repairs more?",
+  "hints": [
+    "First add Red's two fractions.",
+    "Try expressing both totals in twenty-fourths."
+  ],
+  "answer": "Blue",
+  "explanation": "Red repairs 15/24; Blue repairs 16/24. Blue repairs 1/24 more."
+}
